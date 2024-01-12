@@ -7,9 +7,9 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      // avoids needing absolute paths
       "@/*": ["src/*"]
     },
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
