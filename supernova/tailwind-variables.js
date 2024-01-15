@@ -1,6 +1,6 @@
 module.exports = {
     'colors': {
-        'token-#1': '#ffffff', 
+        'white': '#ffffff', 
     },
     'boxShadow': {
     }
