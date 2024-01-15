@@ -1,7 +1,7 @@
 module.exports = {
     'colors': {
         'white': '#ffffff', 
-        'black': '#ffffff', 
+        'black': '#000000', 
     },
     'boxShadow': {
     }
