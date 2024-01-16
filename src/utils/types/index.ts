@@ -9,7 +9,7 @@ type AsProp<C extends React.ElementType> = {
    * An override of the default HTML tag.
    * Can also be another React component.
    */
-  variant?: C;
+  as?: C;
 };
 
 /**
