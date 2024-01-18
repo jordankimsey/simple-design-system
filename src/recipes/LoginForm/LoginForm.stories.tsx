@@ -7,6 +7,7 @@ const meta: Meta<typeof LoginForm> = {
   parameters: {
     layout: 'centered',
   },
+  tags: ['autodocs'],
 };
 
 export default meta;
