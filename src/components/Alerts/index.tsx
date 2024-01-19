@@ -4,10 +4,10 @@ import { cn } from '../../utils';
 
 type AlertProps = ComponentProps<'div'> & VariantProps<typeof alertStyles>;
 
-export const Alert = ({ emphasis, className, ...props }: AlertProps) => {
+export const Alert = ({ type, className, ...props }: AlertProps) => {
   return (
     <div
-      className={cn(alertStyles({ emphasis, className }))}
+      className={cn(alertStyles({ type, className }))}
       role='alert'
       {...props}
     />
@@ -16,7 +16,7 @@ export const Alert = ({ emphasis, className, ...props }: AlertProps) => {
 
 const alertStyles = cva(['text-sm', 'text-white', 'rounded-lg', 'p-4'], {
   variants: {
-    emphasis: {
+    type: {
       dark: ['bg-gray-800', 'dark:bg-white', 'dark:text-gray-800'],
       secondary: 'bg-gray-500',
       info: ['bg-blue-600', 'dark:bg-blue-500'],

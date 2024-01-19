@@ -12,25 +12,25 @@ export default meta;
 export const Default = () => {
   return (
     <div className='space-y-4'>
-      <Alert emphasis={'dark'}>
+      <Alert type={'dark'}>
         Dark alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'secondary'}>
+      <Alert type={'secondary'}>
         Secondary alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'info'}>
+      <Alert type={'info'}>
         Info alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'success'}>
+      <Alert type={'success'}>
         Success alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'danger'}>
+      <Alert type={'danger'}>
         Danger alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'warning'}>
+      <Alert type={'warning'}>
         Warning alert! You should check in on some of those fields below.
       </Alert>
-      <Alert emphasis={'light'}>
+      <Alert type={'light'}>
         Light alert! You should check in on some of those fields below.
       </Alert>
     </div>

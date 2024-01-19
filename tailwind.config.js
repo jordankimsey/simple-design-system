@@ -2,7 +2,6 @@
 import { designSystemVariables } from './supernova/tailwind-variables';
 /** @type {import('tailwindcss').Config} */
 export default {
-  //'./node_modules/preline/preline.js'
   content: [
     'node_modules/preline/dist/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx}',
