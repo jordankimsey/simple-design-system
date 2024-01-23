@@ -1,10 +1,17 @@
 import { cn } from '@/utils';
+import { VariantProps, cva } from 'class-variance-authority';
+import { forwardRef } from 'react';
 import {
   PolymorphicComponentPropsWithRef,
   PolymorphicRef,
-} from '@/utils/types';
-import { VariantProps, cva } from 'class-variance-authority';
-import { forwardRef } from 'react';
+} from '../../utils/types';
+
+export type TextProps<C extends React.ElementType> =
+  PolymorphicComponentPropsWithRef<C, VariantProps<typeof textStyles>>;
+
+export type TextComponent = <C extends React.ElementType = 'span'>(
+  props: TextProps<C>
+) => React.ReactElement | null;
 
 const textStyles = cva('w-full', {
   variants: {
@@ -44,15 +51,6 @@ const textStyles = cva('w-full', {
     align: 'left',
   },
 });
-
-type TextProps<C extends React.ElementType> = PolymorphicComponentPropsWithRef<
-  C,
-  VariantProps<typeof textStyles>
->;
-
-type TextComponent = <C extends React.ElementType = 'span'>(
-  props: TextProps<C>
-) => React.ReactElement | null;
 
 // @ts-expect-error - unexpected typing errors
 export const Text: TextComponent = forwardRef(

@@ -1,13 +1,14 @@
 {
   "name": "pgforsta-design-system",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.9",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "dist/pgforsta-design-system-umd.cjs",
   "module": "dist/pgforsta-design-system.js",
+  "types": "dist/pgforsta-design-system.d.ts",
   "exports": {
     ".": {
       "import": "./dist/pgforsta-design-system.js",

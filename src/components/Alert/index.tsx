@@ -2,8 +2,8 @@ import { VariantProps, cva } from 'class-variance-authority';
 import { ComponentProps } from 'react';
 import { cn } from '../../utils';
 
-type AlertProps = ComponentProps<'div'> & VariantProps<typeof alertStyles>;
-
+export type AlertProps = ComponentProps<'div'> &
+  VariantProps<typeof alertStyles>;
 export const Alert = ({ type, className, ...props }: AlertProps) => {
   return (
     <div

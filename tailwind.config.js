@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import { designSystemVariables } from './supernova/tailwind-variables';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
