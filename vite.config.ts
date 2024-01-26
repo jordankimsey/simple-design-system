@@ -5,29 +5,41 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/components/index.tsx'),
-      // The name of the package
-      name: 'PGForsta-design-system',
-      fileName: 'pgforsta-design-system',
+      entry: {
+        components: path.resolve(__dirname, './src/components/index.ts'),
+        tokens: path.resolve(
+          __dirname,
+          './src/components/supernovaTokens/tailwindVariables.ts'
+        ),
+        plugin: path.resolve(__dirname, './src/components/plugin.ts'),
+      },
+      // entry: path.resolve(__dirname, './src/components/index.tsx'),
+      // name: 'PGForsta-design-system',
+      // fileName: 'pgforsta-design-system',
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'tailwindcss'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          tailwindcss: 'tailwindcss',
         },
       },
     },
+    sourcemap: true,
+    emptyOutDir: true,
+    outDir: 'dist',
   },
   //dts rolls up all the types of our package
   plugins: [react(), dts({ rollupTypes: true })],
+  // css: {
+  //   postcss: {
+  //     plugins: [tailwindcss],
+  //   },
+  // },
 });

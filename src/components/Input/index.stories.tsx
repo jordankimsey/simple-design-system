@@ -4,6 +4,14 @@ import { Input } from '.';
 const meta: Meta<typeof Input> = {
   title: 'Components/Input',
   component: Input,
+  argTypes: {
+    type: {
+      control: {
+        type: 'radio',
+      },
+      options: ['text', 'password', 'number', 'date'],
+    },
+  },
   parameters: {
     layout: 'centered',
   },

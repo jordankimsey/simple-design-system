@@ -24,6 +24,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "src/components/supernovaTokens/tailwindVariables.ts"],
+  "allowJs": true,
   "references": [{ "path": "./tsconfig.node.json" }]
 }

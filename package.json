@@ -1,18 +1,40 @@
 {
   "name": "pgforsta-design-system",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.30",
   "type": "module",
+  "types": "./index.d.ts",
   "files": [
-    "dist"
+    "dist/*",
+    "index.d.ts",
+    "components.d.ts",
+    "tokens.d.ts"
   ],
-  "main": "dist/pgforsta-design-system-umd.cjs",
-  "module": "dist/pgforsta-design-system.js",
-  "types": "dist/pgforsta-design-system.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/pgforsta-design-system.js",
-      "require": "./dist/pgforsta-design-system-umd.cjs"
+    "./components": {
+      "types": "./dist/components.d.ts",
+      "import": "./dist/components.js",
+      "require": "./dist/components.cjs"
+    },
+    "./tokens": {
+      "types": "./dist/tokens.d.ts",
+      "import": "./dist/tokens.js",
+      "require": "./dist/tokens.cjs"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js",
+      "require": "./dist/plugin.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "components": [
+        "./components.d.ts"
+      ],
+      "tokens": [
+        "./tokens.d.ts"
+      ]
     }
   },
   "scripts": {

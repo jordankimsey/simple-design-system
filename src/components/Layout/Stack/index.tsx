@@ -1,4 +1,4 @@
-import { cn } from '@/utils';
+import { cn } from '../../../utils';
 import { Box, BoxProps } from '../Box';
 export type StackProps = BoxProps;
 

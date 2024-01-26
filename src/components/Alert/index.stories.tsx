@@ -4,6 +4,14 @@ import { Alert } from '.';
 const meta: Meta<typeof Alert> = {
   title: 'Components/Alert',
   component: Alert,
+  argTypes: {
+    type: {
+      control: {
+        type: 'radio',
+      },
+      options: ['dark', 'secondary', 'info', 'success', 'danger'],
+    },
+  },
   tags: ['autodocs'],
 };
 

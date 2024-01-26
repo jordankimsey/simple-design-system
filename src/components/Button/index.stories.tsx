@@ -4,6 +4,26 @@ import { Button } from '.';
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
+  argTypes: {
+    variant: {
+      control: {
+        type: 'radio',
+      },
+      options: ['solid', 'outline', 'ghost'],
+    },
+    size: {
+      control: {
+        type: 'radio',
+      },
+      options: ['sm', 'md', 'lg'],
+    },
+    colorscheme: {
+      control: {
+        type: 'radio',
+      },
+      options: ['primary'],
+    },
+  },
   parameters: {
     layout: 'centered',
   },
