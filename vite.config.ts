@@ -15,9 +15,6 @@ export default defineConfig({
         ),
         plugin: path.resolve(__dirname, './src/components/plugin.ts'),
       },
-      // entry: path.resolve(__dirname, './src/components/index.tsx'),
-      // name: 'PGForsta-design-system',
-      // fileName: 'pgforsta-design-system',
       formats: ['es', 'cjs'],
     },
     rollupOptions: {
@@ -37,9 +34,4 @@ export default defineConfig({
   },
   //dts rolls up all the types of our package
   plugins: [react(), dts({ rollupTypes: true })],
-  // css: {
-  //   postcss: {
-  //     plugins: [tailwindcss],
-  //   },
-  // },
 });
