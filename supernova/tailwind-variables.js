@@ -3,8 +3,8 @@ module.exports = {
         'black': '#000000', 
         'white-200': '#eaeaea', 
         'white': {
-            'white': '#ffffff', 
-            'white-100': '#ffffff', 
+            '100': '#ffffff', 
+            '200': '#ffffff', 
         },
     },
     'boxShadow': {
