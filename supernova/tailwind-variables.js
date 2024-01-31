@@ -4,7 +4,7 @@ module.exports = {
         'white': {
             '100': '#ffffff', 
             '200': '#ffffff', 
-            'white-200': '#eaeaea', 
+            '300': '#eaeaea', 
         },
     },
     'boxShadow': {
