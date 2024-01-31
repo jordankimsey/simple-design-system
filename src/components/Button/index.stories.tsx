@@ -37,6 +37,7 @@ type Story = StoryObj<typeof meta>;
 export const Solid: Story = {
   args: {
     variant: 'solid',
+    size: 'md',
     children: 'Button',
   },
 };

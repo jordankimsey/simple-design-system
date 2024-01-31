@@ -1,13 +1,13 @@
 import plugin from 'tailwindcss/plugin';
-import { designSystemVariables } from './supernovaTokens/tailwindVariables';
+import { tokens } from './supernovaTokens/tailwindVariables';
 const pgTailwindConfig = {
   theme: {
     extend: {
-      ...designSystemVariables,
+      ...tokens,
     },
   },
 };
 
 module.exports = plugin(({ theme }) => {
-  theme('colors', designSystemVariables.colors);
+  theme('colors', tokens.colors);
 }, pgTailwindConfig);

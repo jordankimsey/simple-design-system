@@ -1,5 +1,5 @@
 import colors from 'tailwindcss/colors';
-export const designSystemVariables = {
+export const tokens = {
   colors: {
     primary: colors.blue,
     white: '#ffffff',

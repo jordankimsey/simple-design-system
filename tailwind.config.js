@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
-import designSystemVariables from './src/components/supernovaTokens/tailwindVariables';
-
+import { tokens } from './src/components/supernovaTokens/tailwindVariables';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,7 +8,7 @@ export default {
   ],
   darkMode: ['class'],
   theme: {
-    extend: designSystemVariables, // Add this line to extend tailwind theme with your design system
+    extend: tokens, // Add this line to extend tailwind theme with supernova design system tokens
   },
   plugins: [require('preline/plugin')],
 };
