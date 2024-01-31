@@ -2,7 +2,7 @@ module.exports = {
     'colors': {
         'white-100': '#ffffff', 
         'black': '#000000', 
-        'token-#1': '#ffffff', 
+        'white-200': '#ffffff', 
     },
     'boxShadow': {
     }
