@@ -1,8 +1,8 @@
 {
   "name": "pgforsta-design-system",
   "private": false,
-  "version": "0.0.32",
-   "publishConfig": {
+  "version": "0.0.33",
+  "publishConfig": {
     "access": "public"
   },
   "type": "module",
