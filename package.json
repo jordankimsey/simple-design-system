@@ -37,6 +37,9 @@
       ],
       "tokens": [
         "./tokens.d.ts"
+      ],
+      "plugin": [
+        "./plugin.d.ts"
       ]
     }
   },

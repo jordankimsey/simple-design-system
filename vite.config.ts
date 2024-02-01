@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: {
         components: path.resolve(__dirname, './src/components/index.ts'),
-        tailwind: path.resolve(
+        tokens: path.resolve(
           __dirname,
           './supernovaTokens/tailwindVariables.ts'
           // './src/components/supernovaTokens/tailwindVariables.ts'
