@@ -1,5 +1,6 @@
 import plugin from 'tailwindcss/plugin';
-import { tokens } from './supernovaTokens/tailwindVariables';
+
+import { tokens } from '../../supernovaTokens/tailwindVariables';
 const pgTailwindConfig = {
   theme: {
     extend: {

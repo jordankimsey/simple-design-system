@@ -41,7 +41,7 @@ const buttonStyles = cva(
         lg: 'px-6 py-3 text-lg',
       },
       colorscheme: {
-        primary: 'text-white',
+        primary: 'text-white-100',
       },
     },
     // apply classes when multiple props are combined, other styles are added

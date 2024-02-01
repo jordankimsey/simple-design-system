@@ -14,10 +14,10 @@ export const Alert = ({ type, className, ...props }: AlertProps) => {
   );
 };
 
-const alertStyles = cva(['text-sm', 'text-white', 'rounded-lg', 'p-4'], {
+const alertStyles = cva(['text-sm', 'text-white-100', 'rounded-lg', 'p-4'], {
   variants: {
     type: {
-      dark: ['bg-gray-800', 'dark:bg-white', 'dark:text-gray-800'],
+      dark: ['bg-gray-800', 'dark:bg-white-100', 'dark:text-gray-800'],
       secondary: 'bg-gray-500',
       info: ['bg-blue-600', 'dark:bg-blue-500'],
       success: 'bg-teal-500',

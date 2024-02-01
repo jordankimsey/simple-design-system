@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { tokens } from './src/components/supernovaTokens/tailwindVariables';
+import { tokens } from './supernovaTokens/tailwindVariables';
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

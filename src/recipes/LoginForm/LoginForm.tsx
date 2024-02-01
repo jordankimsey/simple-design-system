@@ -1,4 +1,4 @@
-import { Box, Button, Input, Stack, Text } from '../../components';
+import { Box, Button, Input, Stack, Text } from '../../components/index';
 
 export const LoginForm = () => {
   return (

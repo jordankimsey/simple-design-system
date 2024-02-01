@@ -6,9 +6,6 @@ const meta: Meta<typeof Alert> = {
   component: Alert,
   argTypes: {
     type: {
-      control: {
-        type: 'radio',
-      },
       options: ['dark', 'secondary', 'info', 'success', 'danger'],
     },
   },
