@@ -3,7 +3,9 @@ import { ComponentProps, forwardRef } from 'react';
 import { cn } from '../../utils';
 
 export type RadioButtonProps = ComponentProps<'input'> &
-  VariantProps<typeof radioButtonStyles> & { label?: string };
+  VariantProps<typeof radioButtonStyles & typeof labelStyles> & {
+    label?: string;
+  };
 
 const radioButtonStyles = cva([
   'shrink-0',
@@ -21,6 +23,13 @@ const radioButtonStyles = cva([
   'dark:focus:ring-offset-gray-800',
 ]);
 
+const labelStyles = cva([
+  'text-sm',
+  'text-gray-500',
+  'ms-2',
+  'dark:text-gray-400',
+]);
+
 export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ label, checked, className, ...props }, ref) => {
     return (
@@ -36,10 +45,7 @@ export const RadioButton = forwardRef<HTMLInputElement, RadioButtonProps>(
             {...props}
           />
           {label && (
-            <label
-              htmlFor='hs-default-radio'
-              className='text-sm text-gray-500 ms-2 dark:text-gray-400'
-            >
+            <label htmlFor='hs-default-radio' className={cn(labelStyles({}))}>
               {label}
             </label>
           )}
