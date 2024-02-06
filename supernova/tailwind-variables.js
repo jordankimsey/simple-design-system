@@ -1,7 +1,7 @@
 module.exports = {
     'colors': {
         'black': '#000000', 
-        '500': '#ffffff', 
+        '500': '#dedcdc', 
         'white': {
             '100': '#ffffff', 
             '200': '#ffffff', 
